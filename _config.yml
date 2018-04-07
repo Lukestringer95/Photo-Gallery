@@ -1,0 +1,7 @@
+title: skeldeydey
+author: luke
+email: 
+baseurl: ""
+include:              [".htaccess"]
+sass:
+    style: compressed
