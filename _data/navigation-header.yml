@@ -1,0 +1,11 @@
+nav:
+  - logo: 
+      - page: Art Gallary
+        url: /art-gallary/
+      - page: Photo Gallary
+        url: /photo-gallary/
+      - page: News
+        url: /news/
+      - page: Contact
+        url: /contact/
+
