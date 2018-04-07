@@ -1,0 +1,25 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body >
+
+    {% include header.html %}
+<div class="touch-area"ontouchend="closeAll()">
+
+        {{ content }}
+        <button onclick="scrollToTopFunction()" src="/images/grey-to-top.jpg" alt="top" id="toTopBtn"title="Go to top"></button>
+      
+  </body>
+    {% include footer.html %}
+</div>
+    {% include script.html %}
+
+  
+
+</html>

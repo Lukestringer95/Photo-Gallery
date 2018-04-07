@@ -1,0 +1,81 @@
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+
+            <footer>
+                <div class="footerContainer">
+          
+              
+                
+              <div class="footer-funding">
+                <h4>Funding Sources</h4>
+                  <div class="funding-row">
+                {% for item in site.data.funding_sources %}
+                {% capture cyclerow %}{% cycle '1', '2','3' %}{% endcapture %}
+                {% if cyclerow == '1' %}
+                    <div class="flex-item-funding-footer">
+                                        <img src= {{ item.image }} alt="1">       
+              </div>
+                                        {% endif %}
+  
+              {% endfor %}
+              </div>
+              <div class="funding-row">
+                  {% for item in site.data.funding_sources %}
+                  {% capture cyclerow %}{% cycle '1', '2','3' %}{% endcapture %}
+                  {% if cyclerow == '1' %}
+                  <div class="flex-item-funding-footer">
+                  <img class="flex-item-funding-footer" src= {{ item.image }} alt="2">  
+                  </div>     
+              {% endif %}
+                {% endfor %}
+                </div>
+                <div class="funding-row">
+                  {% for item in site.data.funding_sources %}
+                  {% capture cyclerow %}{% cycle '1', '2','3' %}{% endcapture %}
+                  {% if cyclerow == '1' %}
+                  <div class="flex-item-funding-footer">
+                  <img class="flex-item-funding-footer" src= {{ item.image }} alt="2">  
+                  </div>     
+              {% endif %}
+                {% endfor %}
+                </div>
+              </div>
+                  <div class="footer-contact">
+                    <h4>Contact lab</h4>
+                          <br>
+                            <div class="contactPerson1">
+                       
+                            <p><b>{{ site.data.contact_information.contact-one.name }}</b></p>
+                            <p><b>{{ site.data.contact_information.contact-one.title }}</b></p>
+                    
+                            <p><a href={{ site.data.contact_information.contact-one.email-link }}>{{ site.data.contact_information.contact-one.email }}</a></p>
+                            </div>
+              
+                            <div class="contactPerson2">                    
+                                <p><b>{{ site.data.contact_information.contact-two.name }}</b></p>
+                                <p><b>{{ site.data.contact_information.contact-two.title }}</b></p>
+                                <p><a href={{ site.data.contact_information.contact-two.email-link }}>{{ site.data.contact_information.contact-two.email }}</a></p>
+                            </div>
+                  </div>
+                  <div class="footer-unisa-logo">
+                      <img  class="footer-unisa-logo" src="/images/unisa-logo.png" alt="">  
+                  </div>
+            </div>
+              </footer>
+                    
+                  
+                        
+                        
+                     
+                    </div>
+                  </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+
+        </div>
+    </div>
+</footer>
